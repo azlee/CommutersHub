@@ -27,8 +27,9 @@ CREATE TABLE `users` (
 DROP TABLE IF EXISTS `trip`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `trip_users` (
+CREATE TABLE `trip` (
   `trip_id` int NOT NULL AUTO_INCREMENT,
+  `location` varchar(225) NOT NULL,
   `unix_time` BIGINT UNSIGNED NOT NULL,
   PRIMARY KEY (`trip_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
